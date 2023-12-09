@@ -1,0 +1,228 @@
+body{
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+.sidebar{
+    margin: 0;
+    padding: 0;
+    width: 19%;
+    background-color: black;
+    background-size: 150% 100%;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+.sidebar a{
+    display: block;
+    color: white;
+    font-weight: bold;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    text-decoration: none;
+}
+h1{
+    font-size: 30px;
+    color: white;
+}
+
+h3{
+    padding:  8px 8px 8px 32px;
+    font-size: 40px;
+    font-family: 'Times New Roman', Times, serif;
+    color: cornflowerblue;
+}
+.sidebar a:hover{
+    color: red;
+}
+div.content{
+    margin-left: 300px;
+    color: black;
+    background-color:lightcyan ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 100%;
+}
+div.container{
+    background-color: grey;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    padding: 30px;
+    height: 20%;
+}
+input{
+    position: relative;
+    width: 60%;
+    height: 40px;
+    font-size: 20px;
+    border-radius: 3px;
+    padding-left: 10px;
+    font-family: Candara Light;
+    font-weight: bold;
+
+}
+.button{
+    border: 0px;
+    border-radius: 2px;
+    color: white;
+    background-color: aquamarine;
+    height: 40px;
+    width: 545px;
+    font-size: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+button:hover{
+    background-color: red;
+}
+.button:active{
+    background-color: aqua;
+    box-shadow: 0 3px black;
+    transform: translateY(4px);
+}
+textarea{
+    padding-left: 65px;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+    height: 100px;
+    width: 475px;
+}
+.center{
+    position: absolute;
+    top: 56%;
+    left: 62%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+    letter-spacing: 6px;
+    font-size: 25px;
+    padding: 15px;
+    border: 2px solid;
+    border-color: black;
+}
+.middle{
+    transition: .5s ease;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(50%, 50%);
+    text-align: center;
+}
+br{
+    margin: auto;
+width: 40%;
+}
+div.image{
+    padding-left: 0px;
+    opacity: 0.9;
+    
+}
+
+@media screen and (max-width: 700px) {
+    .sidebar{
+        width: 100%;
+        height: auto;
+        position: relative;
+
+    }
+    .sidebar a 
+        {
+            float: left;
+    }
+    div.content {margin-left: 0;}
+}
+@media screen and (max-width: 400px) {
+    .sidebar a{
+        text-align: center;
+        float: none;
+    }
+}
+.row img{
+    margin: 5px;
+    top: 0%;
+    width: 100px;
+}
+.row{
+   display: flex;
+}
+.column{
+    flex: 33.33%;
+    padding: 3px;
+    cursor: pointer;
+}
+.row img:hover{
+    opacity: 0.7;
+    -webkit-transition: .3s ease-in-out;
+    transition: .3s ease-in-out;
+    position: relative;
+}
+.zoom{
+    transition: transform .5s ease;
+}
+.text{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    padding: 15px 30px;
+    width: 100px;
+    top: 50%;
+    left: 50%;
+}
+.text:hover{
+    color: aliceblue;
+}
+.zoom:hover{
+    -ms-transform: scale(1) ;
+    -webkit-transform: scale(1);
+    transform: scale(1.2);
+}
+.zoom:hover .middle{
+ opacity: 1;
+}
+
+footer{
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+}
+/*.fa{
+    padding: 20px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    border: 50%;
+}
+.fa:hover{
+    opacity: 0.7;
+}
+.fa-facebook{
+    background: beige;
+    color: white;
+}
+.fa-twitter{
+    background: beige;
+    color: white;
+}
+.fa-instagram{
+    background: beige;
+    color: white;
+}
+.fa snapchat-ghost{
+    background: beige;
+    color: white;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.fa-pinterest{
+    background: beige;
+    color: white;
+}
+.fa-envelope{
+    background: beige;
+    color: white;
+}
+*/
