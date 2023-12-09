@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Practical 6</title>
+    <style>
+        body {
+            background-image: url('i2.jpeg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        th {
+            background-color: black;
+            color: white;
+        }
+
+        tr:hover {
+            background-color: coral;
+        }
+
+        th,
+        td {
+            text-align: left;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body >
+    <center>
+        <br><br>
+        <h1>Squares and Cubes of 1 to 10</h1>
+        <table border="1">
+            <tr>
+                <th>Number</th>
+                <th>Square</th>
+                <th>Cube</th>
+            </tr>
+
+            <script>
+                for (var i = 0; i <= 10; i++) {
+                    document.write("<tr><td>" + i + "</td><td>" + i * i + "</td><td>" + i * i * i + "</td></tr>");
+                }
+            </script>
+        </table>
+    </center>
+</body>
+</html>
