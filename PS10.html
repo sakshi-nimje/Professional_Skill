@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('BackgroundHD.jpg'); /* Replace with your background image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            background: rgb(238, 249, 249);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+        }
+
+        form {
+            text-align: center;
+        }
+
+        input {
+            width: 100%;
+            padding: 6px;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: green;
+            color: #f1e6e6;
+            padding: 20px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .error {
+            color: red;
+        }
+    </style>
+    <title>User Registration</title>
+</head>
+<body>
+    <div class="container">
+        <h1>User Registration</h1>
+        <div id="login-form">
+            <h2>Login</h2>
+            <input type="text" id="login-username" placeholder="Username">
+            <input type="password" id="login-password" placeholder="Password">
+            <button onclick="login()">Login</button>
+            <p class="error" id="login-error"></p>
+        </div>
+        <div id="signup-form" style="display: none;">
+            <h2>Signup</h2>
+            <input type="text" id="signup-username" placeholder="Username">
+            <input type="password" id="signup-password" placeholder="Password">
+            <button onclick="signup()">Signup</button>
+            <p class="error" id="signup-error"></p>
+        </div>
+        <p id="login-success" style="display: none;">Login successful!</p>
+        <p>Don't have an account? <a href="#" id="toggle-signup">Signup</a></p>
+        <p>Forgot your password? <a href="forgot_password.html">Forgot Password</a></p>
+    </div>
+
+    <script>
+        function login() {
+            const username = document.getElementById("login-username").value;
+            const password = document.getElementById("login-password").value;
+
+            // Add your login logic here (e.g., check credentials)
+            if (username === "demo" && password === "password") {
+                document.getElementById("login-error").style.display = "none";
+                document.getElementById("login-success").style.display = "block";
+                document.getElementById("login-success").textContent = "Login successful!";
+            } else {
+                document.getElementById("login-error").style.display = "block";
+                document.getElementById("login-error").textContent = "Invalid username or password.";
+            }
+        }
+
+        function signup() {
+            const username = document.getElementById("signup-username").value;
+            const password = document.getElementById("signup-password").value;
+
+            // Add your signup logic here (e.g., create a new user)
+            document.getElementById("signup-error").textContent = "Signup successful. Please login.";
+            document.getElementById("signup-error").style.display = "block";
+        }
+
+        document.getElementById("toggle-signup").addEventListener("click", function () {
+            document.getElementById("login-form").style.display = "none";
+            document.getElementById("signup-form").style.display = "block";
+        });
+    </script>
+</body>
+</html>
